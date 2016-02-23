@@ -1,0 +1,50 @@
+.YellowBorder {
+  border-color: #fff000;
+}
+.BigBorder {
+  border-width: 10px;
+}
+.SolidBorder {
+  border-style: solid;
+}
+.DashedBorder {
+  border-style: dashed;
+}
+#button1 {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-color: #fff000;
+  border-style: dashed;
+  background-color: #9B20FF;
+}
+#button2 {
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-color: #fff000;
+  border-style: solid;
+  border-width: 10px;
+  background-color: #7900dd;
+}
+#button3 {
+  border-radius: 9999px;
+  -webkit-border-radius: 9999px;
+  -moz-border-radius: 9999px;
+  border-color: #9558c7;
+  border-style: solid;
+  background-color: #bd42ff;
+}
+.big-button {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  background: #9B20FF;
+  margin: 30px;
+}
+aside h1 {
+  color: #EED2EE;
+}
+aside h1:hover {
+  background-color: #9B20FF;
+}

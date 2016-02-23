@@ -1,0 +1,68 @@
+@import "vars";
+
+// mixins
+.YellowBorder {
+  border-color: #fff000;
+
+}
+
+.BigBorder {
+  border-width: 10px;
+}
+
+.SolidBorder {
+  border-style: solid;
+}
+
+.DashedBorder {
+  border-style: dashed;
+}
+
+// parametric mixin
+.RoundedCorners(@radius: 0) {
+  border-radius: @radius;
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+}
+
+
+#button1 {
+  .RoundedCorners;
+  .YellowBorder;
+  .DashedBorder;
+  background-color: @mainButtonColor;
+}
+
+#button2 {
+  .RoundedCorners(25px);
+  .YellowBorder;
+  .SolidBorder;
+  .BigBorder;
+  background-color: @mainButtonColor - #222;
+}
+
+#button3 {
+  .RoundedCorners(9999px);
+  border-color: @borderColor;
+  .SolidBorder;
+  background-color: @mainButtonColor + #222;
+}
+
+// regular class styles
+.big-button {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  background: @mainButtonColor;
+  margin: 30px;
+}
+
+aside {
+  h1 {
+    color: @defaultThemeColor;
+
+    &:hover {
+      background-color: @mainButtonColor;
+    }
+  }
+}
